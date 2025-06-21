@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="image-container">music player</h1>
+            <img src="yemi.jpg" id="img" class="img"/>
+            <h2 id="track-name">trackname</h2>
+            <audio id="audio">
+                <source src="yemi.mp3" type="audio/mpeg">
+            </audio>
+            <div>
+                <input type="range" id="seek-bar" value="0" min="0" max="100">
+                <span id="current-Time">0:00</span> /
+                <span id="duration">0:00</span>
+            </div>
+            <div class="buttons">
+            <i id="next" class="bi bi-skip-forward-fill fs-2 mx-2" role="button"></i>
+            <i id="played" class="bi bi-play-fill fs-2 mx-2" role="button"></i>
+            <i id="prev" class="bi bi-skip-backward-fill fs-2 mx-2" role="button"></i>
+            <i id="volume-up" class="bi bi-volume-up-fill fs-2 mx-2" role="button"></i>
+            <i id="volume-down" class="bi bi-volume-down-fill fs-2 mx-2" role="button"></i>
+            </div>
+        </div>
+    </div>
+    <script src="audio.js"></script>
+</body>
+</html>
